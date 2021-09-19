@@ -4,7 +4,10 @@ import { useAppDispatch } from './counterHooks';
 
 export default function BasicCounter() {
   const dispatch = useAppDispatch();
+  // Without using a selector (the `useSelector()` hook), the DOM tree won't be updated by state.
   const count = selectCount();
+  // The below line won't work.
+  // const { count } = counterStore.getState();
 
   return (
     <div>
