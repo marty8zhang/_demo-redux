@@ -1,11 +1,11 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import Counter from './features/counter/Counter';
-import './FancyCounter.css';
+import './FancyCounterPage.css';
 import { store } from './app/store';
 import logo from './logo.svg';
 
-function FancyCounter() {
+function FancyCounterPage() {
   return (
     <Provider store={store}>
       <div className="App">
@@ -64,4 +64,4 @@ function FancyCounter() {
   );
 }
 
-export default FancyCounter;
+export default FancyCounterPage;

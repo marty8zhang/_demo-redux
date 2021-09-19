@@ -1,10 +1,10 @@
 import React from 'react';
 import { selectCount } from './counterSelectors';
-import { useAppDispatch, useAppSelector } from './counterHooks';
+import { useAppDispatch } from './counterHooks';
 
 export default function BasicCounter() {
   const dispatch = useAppDispatch();
-  const count = useAppSelector(selectCount);
+  const count = selectCount();
 
   return (
     <div>
