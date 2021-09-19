@@ -24,6 +24,7 @@ module.exports = {
     'jest',
   ],
   rules: {
+    'import/prefer-default-export': 'warn',
     'no-empty-function': 0,
     '@typescript-eslint/no-empty-function': 1,
     'no-shadow': 0,
